@@ -1,0 +1,6 @@
+set terminal png
+set output "Packet-Delivery-Ratio.png"
+set title "Packet Delivery Ratio"
+set xlabel "Number Of Nodes"
+set ylabel "Packet Delivery Ratio"
+plot "gnuPDR1.csv" using 1:2 with lines title "AODV", "gnuPDR2.csv" using 1:2 with lines title "Modified-AODV"
